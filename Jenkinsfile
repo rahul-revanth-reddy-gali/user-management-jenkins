@@ -2,7 +2,7 @@ pipeline {
     agent any
 //
     environment {
-        JAVA_HOME = "/usr/lib/jvm/java-17-openjdk" // change if needed
+        JAVA_HOME = "C:\\Program Files\\Java\\jdk-17" // change if needed
         PATH = "${JAVA_HOME}/bin:${env.PATH}"
     }
 
