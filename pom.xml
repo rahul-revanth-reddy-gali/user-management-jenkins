@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wipro</groupId>
-	<artifactId>user-management-service</artifactId>
+	<artifactId>user-service-clean</artifactId>   
 	<version>0.0.1-SNAPSHOT</version>
 	<name>user-management-service</name>
 	<description>User management service for e-commerce application</description>
@@ -127,6 +127,8 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.30</version>
+
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
