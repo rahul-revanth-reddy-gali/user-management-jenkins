@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/rahul-revanth-reddy-gali/user-management-jenkins.git'
+                git branch: 'main', url: 'https://github.com/rahul-revanth-reddy-gali/user-management-jenkins.git'
             }
         }
 
