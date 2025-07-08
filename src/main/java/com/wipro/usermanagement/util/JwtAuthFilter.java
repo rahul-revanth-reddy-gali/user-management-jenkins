@@ -36,6 +36,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
         System.out.println(requestPath + "this is the request path");
 
         if (requestPath.startsWith("/api/auth/") || requestPath.equals("/")   ) {
+        	System.out.println("🔓 Public endpoint reached: " + requestPath);
             filterChain.doFilter(request, response);
             return;
         }
