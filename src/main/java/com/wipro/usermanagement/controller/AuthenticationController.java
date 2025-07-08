@@ -40,7 +40,12 @@ public class AuthenticationController {
     public ResponseEntity<?> handleOptions() {
         return ResponseEntity.ok().build();
     }
-
+    
+    @GetMapping("/")
+    public String home() {
+        return "✅ User Service is running!";
+    }
+    
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest request) {
         return ResponseEntity.ok(authService.register(request));
