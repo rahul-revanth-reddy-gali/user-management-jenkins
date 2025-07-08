@@ -43,6 +43,7 @@ public class AuthenticationController {
     
     @GetMapping("/")
     public String home() {
+    	System.out.println("reached controller endpoint");
         return "✅ User Service is running!";
     }
     
